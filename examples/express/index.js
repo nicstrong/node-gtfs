@@ -6,7 +6,7 @@ var boot = module.exports = require('./boot')
 module.exports = boot(app);
 
 if (!module.parent) {
-  var port = process.env.PORT || 8081;
+  var port = process.env.PORT || 3000;
   app.listen(port, function(){
     console.error('\x1b[32m' + app.set('domain') + '\x1b[0m running on port %d', port);
   });
